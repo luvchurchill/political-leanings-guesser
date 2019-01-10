@@ -1,0 +1,15 @@
+''' input what you think is the most important political isue in the u.s.a (lowercase only) and i will guess your political leanings'''
+
+
+
+def guesser():
+    i = input("")
+    msg = ""
+    if "health care" in i or "rights" in i or "tuition" in i or "college" in i or "global warming" in i or  "climate change" in i or "trump" in i or "dictator" in i or "ism" in i or "control" in i:
+        msg+= "you are a liberal! #resist "
+    elif "border" in i or "free market" in i or "tax" in i or "regulation" in i or "illegal immigration" in i or  "law and order" in i or "amendment" in i or "relig" in i:
+            msg += "you are a conservative! MAGA"
+    else: msg += "what type of issue is that?!?"
+    return msg
+    
+print(guesser())
